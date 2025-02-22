@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Body1() {
   return (
-    <div className='w-[95%] md:h-[1284px] h-auto border-[2px] border-[#A5A5A5]'>
+    <div className='w-[95%] md:h-[1284px] h-auto border-b border-t md:border-[2px] border-[#A5A5A5]'>
         {/* button div */}
         <div><Button title="하우스 오너"/></div>
         {/* content div */}
@@ -29,7 +29,7 @@ export default function Body1() {
             저희 모드니펫은 <span className='font-bold text-[21px]'>반려동물이 더 행복하고 의미 있는 시간이</span> 될 수 있도록 늘 함께하겠습니다.<br/>
             다시 한번 축하와 감사의 마음을 전하며, 앞으로도 많은 사랑과 관심 부탁드립니다.
             </p>
-             <p className='mt-6'> 감사합니다.</p>
+             <p className='mt-6'>감사합니다.</p>
              <p className="mt-8 font-extrabold">모드니펫 드림</p>
           </div>
           </div>

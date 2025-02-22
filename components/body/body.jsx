@@ -3,13 +3,15 @@ import Button from './button'
 import Body1 from './body1'
 import Body2 from './body2'
 import Body3 from './body3'
+import Body_Form from './body_form'
+
 
 export default function Body() {
   return (
     <>
     <div className='w-[100%] h-auto flex flex-col justify-center items-center'>
       {/* div 1 */}
-        <div className='w-[95%] h-[531px] border-[2px] border-[#A5A5A5] mt-8'>
+        <div className='w-[95%] h-[531px] border-b border-t md:border-[2px] border-[#A5A5A5] mt-8'>
             {/* black button */}
             <Button title="모드니펫"/>
             {/* center content */}
@@ -37,7 +39,7 @@ export default function Body() {
           <Body1/>
           <Body2/>
           <Body3/>
-        
+          <Body_Form/>
         
 
 
