@@ -78,7 +78,7 @@ function Login({ setIsValid }) {
               className="object-contain"  // or object-cover depending on your needs
             />
           </div>
-          <Button
+          {/* <Button
             onMouseEnter={() => {
               setIsHovered(true);
             }}
@@ -94,7 +94,7 @@ function Login({ setIsValid }) {
             }}
           >
             하우스백 정품 인증 하기
-          </Button>
+          </Button> */}
           {isClicked && (
             <div className='mt-10'>
               <Serial setIsValid={setIsValid}></Serial>
