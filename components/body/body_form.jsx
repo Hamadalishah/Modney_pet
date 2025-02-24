@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './button'
 
 
-import Body_Form_Content from './body_farm_content';
+import Body_Form_Content from './body_form_content';
 
 export default function Body_Form() {
  
