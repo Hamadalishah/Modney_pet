@@ -3,7 +3,7 @@ import React from 'react'
 export default function Button(props) {
   return (
     <>
-    <div className='w-[189px] h-[48.5px] flex justify-center items-center text-white bg-black'>{props.title}</div>
+    <div className='w-[159px] h-[39.5px] bg-black flex justify-center items-center text-white '>{props.title}</div>
     </>
   )
 }

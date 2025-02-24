@@ -1,14 +1,8 @@
 function changeSerialCode(serial) {
-    // Check if serial is null or undefined
-    if (!serial || typeof serial !== 'string') {
-        console.log("유효하지 않은 시리얼 번호입니다.");
-        return null; // Return null to handle invalid serial
-    }
-
     // 유효성 검사: 시리얼 번호는 8자리 문자열이어야 함
-    if (serial.length !== 8) {
+    if (!serial || serial.length !== 8) {
         console.log("유효하지 않은 시리얼 번호입니다.");
-        return null; // Return null if the serial length is not 8
+        return {};  // Return an empty object instead of null
     }
 
     // 숫자를 알파벳으로 변환하는 함수 (첫 번째 자리만 변환)
@@ -19,7 +13,7 @@ function changeSerialCode(serial) {
 
     const firstChar = serial.slice(0, 1);
 
-    const apartment = isNaN(firstChar) 
+    const apartment = isNaN(firstChar)
         ? firstChar.toUpperCase() // If it's not a number, keep it as is
         : numberToAlphabet(parseInt(firstChar));   // 첫 번째 자리 (아파트 번호를 알파벳으로 변환)
 
@@ -33,14 +27,4 @@ function changeSerialCode(serial) {
     };
 }
 
-// Example usage of the function
-const serialCode = changeSerialCode("12345678");
-
-if (serialCode) {
-    // Only proceed if serialCode is valid
-    console.log(serialCode.apartment);
-    console.log(serialCode.building);
-    console.log(serialCode.unit);
-} else {
-    console.log("Failed to process the serial code.");
-}
+export default changeSerialCode;

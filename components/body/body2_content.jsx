@@ -9,9 +9,9 @@ export default function Body2_Content(props) {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
-        setIsSlideOpen(true); // Set true on mobile
+        setIsSlideOpen(true); 
       } else {
-        setIsSlideOpen(false); // Reset or keep as is for desktop
+        setIsSlideOpen(false); 
       }
     };
 
@@ -26,7 +26,7 @@ export default function Body2_Content(props) {
   };
 
   return (
-    <div className="w-full md:px-[200px] py-6 border-[#DDDDDD] border-b">
+    <div className="w-full md:px-[200px] py-6 border-[#DDDDDD] border-b bg-[#FFFCF3]">
       {/* Header Section */}
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-2 ">
