@@ -46,13 +46,13 @@ export default function Body2() {
     
   }]
   return (
-    <div className='w-[95%] md:h-[1127px] h-auto border-b border-t md:border-[2px] border-[#A5A5A5] bg-[#FFFCF3]'>
+    <div className='w-[95%]  h-auto border-b border-t md:border-[2px] border-[#A5A5A5] bg-[#FFFCF3]'>
         {/* button div */}
         <div><Button title="하우스 오너"/></div>
         {/* content div */}
         <div className='w-full h-full mt-4 md:mt-0 flex justify-center items-center'>
             {/* main div */}
-          <div className='md:w-[90%] w-full md:h-[783px] flex flex-col  '>
+          <div className='md:w-[90%] w-full h-auto flex flex-col  '>
           <div className='md:text-[45px] text-[30px] text-center font-bold border-[#DDDDDD] border-b pb-8'>하우스백 입주절차안내</div>
           <div>
              {/* Map through Body_Content and pass each object to Body2_Content */}
